@@ -1,0 +1,71 @@
+.main {
+    max-width: 1000px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-areas:
+            'total-price total-price'
+            'elements cart'
+            'sum sum';
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+    font-size: 2em;
+    font-family: Helvetica, sans-serif;
+}
+
+.total-price {
+    grid-area: total-price;
+    padding: 20px;
+    text-align: right;
+}
+.elements {
+    grid-area: elements;
+    border: 1px #eee solid;
+    padding: 20px;
+}
+.cart {
+    grid-area: cart;
+    background-color: #C9F76F;
+    padding: 20px;
+}
+
+.sum {
+    grid-area: sum;
+    padding: 20px;
+    text-align: right;
+}
+
+#elements, #cart {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.rest{
+    color: #CD0074;
+    font-weight: bold;
+}
+.delimiter{
+    color: #ccc;
+}
+.total{
+    color: #ccc;
+    font-weight: bold;
+}
+
+.element{
+    border: #eee solid 1px;
+    background-color: #CD0074;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.element .name{
+    font-size: 0.7em;
+    text-align: center;
+}
+.element .price{
+    font-size: 2em;
+    text-align: center;
+}

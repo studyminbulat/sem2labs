@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+<main class="main">
+    <div class="total-price">
+        <span class="delimiter">Остались</span>
+        <span class="rest" id="rest">10000</span>
+        <span class="delimiter">из</span>
+        <span class="total" id="total">100000</span>
+    </div>
+    <div class="elements">
+        <div id="elements">
+        </div>
+    </div>
+    <div class="cart" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div  id="cart">
+        </div>
+    </div>
+    <div class="sum">
+        <span class="delimiter">Сумма: </span>
+        <span class="rest" id="sum">10000</span>
+    </div>
+</main>
+
+
+</body>
+</html>
